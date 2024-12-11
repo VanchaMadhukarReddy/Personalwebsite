@@ -1,0 +1,323 @@
+.portion1 {
+  /* height: 100vh; */
+  display: flex;
+  top: 2vh;
+  bottom: 2vh;
+}
+.contact {
+  height: 96vh;
+  width: 20vw;
+  display: flex;
+  background-color: rgb(30, 30, 31);
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid hsl(0, 0%, 22%);
+  position: relative;
+}
+.a1 {
+  margin: 0px;
+  font-size: "170%";
+}
+.btn {
+  height: 35px;
+  width: 100px;
+  background: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 40%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  border-radius: 3vw;
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  display: none;
+}
+.section1 {
+  margin-top: 5vh;
+  width: 20.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.section2 {
+  width: 20vw;
+  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.none {
+  display: none;
+}
+.mail {
+  display: inline-block;
+  max-width: 11vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+}
+.email,
+.phn,
+.loc,
+.birth,
+.p {
+  width: 18vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-left: 2vw;
+}
+.emailimg,
+.phnimg,
+.birthimg,
+.locimg {
+  width: 2.6vw;
+  height: 5.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: linear-gradient(
+      135deg,
+      hsla(45, 11%, 43%, 0.251) 0%,
+      hsla(35, 100%, 68%, 0) 59.86%
+    ),
+    hsl(240, 2%, 13%);
+  background-color: hsl(240, 2%, 13%);
+}
+.emailinfo,
+.phninfo,
+.locinfo,
+.birthinfo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.info {
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.separator {
+  width: 70%;
+  height: 1px;
+  background: hsl(0, 0%, 22%);
+  margin: 16px 0;
+}
+.webdeveloper {
+  height: 3.8vh;
+  width: 60%;
+  background-color: #2b2b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vh;
+}
+.section2 p {
+  display: block;
+  margin: 0%;
+}
+.section2 p:nth-of-type(odd) {
+  color: #d6d6d6b2;
+}
+.img {
+  background: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  border-radius: 20px;
+  height: 16vh;
+  width: 8vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.portion3 {
+  width: 10vw;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+/* -------------------------responsive-------------------- */
+@media only screen and (min-width: 550px) and (max-width: 1200px) {
+  .contact {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    box-sizing: border-box;
+  }
+  .section1 {
+    margin-top: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: flex-start;
+  }
+  .section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+  }
+  .img {
+    height: 120px;
+    width: 120px;
+  }
+  .emailimg,
+  .phnimg,
+  .birthimg,
+  .locimg {
+    width: 35px;
+    height: 30px;
+  }
+  .email,
+  .phn,
+  .loc,
+  .birth,
+  .p {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2vw;
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 404px) and (max-width: 549px) {
+  .contact {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    box-sizing: border-box;
+  }
+  .section1 {
+    margin-top: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: flex-start;
+  }
+  .section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+  }
+  .img {
+    height: 120px;
+    width: 120px;
+  }
+  .emailimg,
+  .phnimg,
+  .birthimg,
+  .locimg {
+    width: 35px;
+    height: 30px;
+  }
+  .email,
+  .phn,
+  .loc,
+  .birth,
+  .p {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2vw;
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 404px) {
+  .contact {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    box-sizing: border-box;
+  }
+  .section1 {
+    margin-top: 0px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: flex-start;
+  }
+  .section2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+  }
+  .img {
+    height: 120px;
+    width: 120px;
+  }
+  .emailimg,
+  .phnimg,
+  .birthimg,
+  .locimg {
+    width: 35px;
+    height: 30px;
+  }
+  .email,
+  .phn,
+  .loc,
+  .birth,
+  .p {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2vw;
+  }
+  .btn {
+    display: block;
+    cursor: pointer;
+  }
+  .a1 {
+    /* color: red; */
+    font-size: 130%;
+  }
+}

@@ -1,0 +1,24 @@
+.items {
+  height: 180px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: green; */
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.items_part1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  transition: transform 0.3s ease;
+}
+.items_part1 img:hover {
+  transform: scale(1.1);
+}
+.items_part1 img {
+  width: 200px;
+  height: 150px;
+}
