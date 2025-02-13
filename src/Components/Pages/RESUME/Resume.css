@@ -15,10 +15,11 @@
 }
 
 .Resume_section {
-  width: 60vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 3vh;
+  /* background-color: blue; */
 }
 .Resume_section1 {
   display: flex;
@@ -140,8 +141,9 @@
   /* background-color: red; */
 }
 .resume_section2 {
-  width: 53vw;
+  width: 100%;
   margin-top: 5vh;
+  /* background-color: green; */
 }
 .head_part {
   width: 100%;
@@ -157,14 +159,15 @@
 .resume_section2_part1 {
   display: flex;
   justify-content: center;
-  width: 53vw;
+  width: 90%;
   flex-direction: column;
   align-items: center;
   gap: 4vh;
   padding-bottom: 4vh;
 }
 .resume_section2_part2 {
-  width: 40vw;
+  /* background-color: red; */
+  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 2vh;
@@ -192,7 +195,7 @@
   font-style: normal;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 707px) {
+@media only screen and (max-width: 707px) {
   .education_section2 {
     width: fit-content;
     height: fit-content;
@@ -202,5 +205,10 @@
     /* background-color: red; */
     /* min-height: 300px;
     min-width: 270px; */
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .Resume {
+    width: 80vw;
   }
 }

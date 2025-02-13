@@ -107,6 +107,8 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  width: 90%;
+  /* background-color: red; */
 }
 .info {
   margin-top: 1vh;
@@ -122,7 +124,7 @@
 }
 .webdeveloper {
   height: 3.8vh;
-  width: 60%;
+  width: fit-content;
   background-color: #2b2b2c;
   display: flex;
   justify-content: center;
@@ -263,8 +265,25 @@
     display: block;
     cursor: pointer;
   }
+  .portion3 {
+    width: 40%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .mail {
+    display: inline-block;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+  }
 }
-@media only screen and (min-width: 0px) and (max-width: 404px) {
+@media only screen and (max-width: 404px) {
   .contact {
     width: 90vw;
     height: fit-content;
@@ -311,7 +330,18 @@
     align-items: center;
     gap: 10px;
     margin-left: 2vw;
+    /* background-color: red; */
   }
+  .mail {
+    display: inline-block;
+    max-width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: white;
+  }
+
   .btn {
     display: block;
     cursor: pointer;
@@ -319,5 +349,13 @@
   .a1 {
     /* color: red; */
     font-size: 130%;
+  }
+  .portion3 {
+    width: 70%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
   }
 }

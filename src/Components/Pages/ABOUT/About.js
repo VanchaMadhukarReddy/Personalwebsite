@@ -38,6 +38,7 @@ const About = () => {
         </div>
         <div className="about_section2">
           <h2>What I'm Doing</h2>
+
           <div className="about_work">
             <div className="about_work_info_box">
               <div className="about_work_image">

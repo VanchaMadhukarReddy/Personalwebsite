@@ -32,7 +32,7 @@ const Portfolio = () => {
               className={value === "all" ? "colorchange" : ""}
             >
               {" "}
-              All
+              Full_Stack
             </li>
             <li
               onClick={() => {
@@ -41,7 +41,7 @@ const Portfolio = () => {
               }}
               className={value === "webdevelopment" ? "colorchange" : ""}
             >
-              Web Development
+              Back_End
             </li>
             <li
               onClick={() => {
@@ -51,7 +51,7 @@ const Portfolio = () => {
               className={value === "Datascience" ? "colorchange" : ""}
             >
               {" "}
-              Datascience
+              Front_End
             </li>
           </ul>
         </div>
