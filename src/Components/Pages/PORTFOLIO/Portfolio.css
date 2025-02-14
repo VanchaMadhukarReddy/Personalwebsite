@@ -47,7 +47,7 @@
   cursor: pointer;
   width: 70%;
   /* background-color: green; */
-  min-width: 400px;
+  min-width: 250px;
 }
 .colorchange {
   padding: 0 2.4vh 0 1vw;
@@ -75,5 +75,29 @@
 @media only screen and (max-width: 1200px) {
   .Portfolio {
     width: 80vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Portfolio {
+    width: 90vw;
+  }
+  .portfolio1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+  .list_items {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2vh;
+    cursor: pointer;
+    width: 100%;
+    /* background-color: green; */
+    min-width: fit-content;
   }
 }
