@@ -1,6 +1,7 @@
 import webimg_1 from "./project-1.png";
 import datascience_1 from "./project-2.png";
 import webimg_2 from "./project-3.jpg";
+import dashboard from "./dashboardprojectimg.png";
 
 export let all_projects = [
   {
@@ -26,9 +27,9 @@ export let all_projects = [
 export let Web_projects = [
   {
     id: 1,
-    name: "E-commerce",
-    image: webimg_1,
-    link: "https://banti-e-commerce.netlify.app/",
+    name: "Dashboard",
+    image: dashboard,
+    link: "https://dashboard-project-1-fronend.onrender.com",
   },
 ];
 
